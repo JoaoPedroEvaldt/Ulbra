@@ -1,0 +1,48 @@
+body{background-color:rgb(23, 21, 53);text-align: center;}
+
+p{color:white;font-size: 20px;
+
+}
+h1{color:white;font-size: 40px;
+
+}
+ol{color:white; font-size: 20px;
+
+}
+img{border-radius: 10%;
+    width: 160px;
+    height: 160px;
+
+}
+
+h1{margin: 30px;
+
+}
+ h2{
+    text-decoration: underline ;
+    background-color: white;
+margin: 40px;
+ }
+ 
+ ol {
+    font-size: 20px;
+    width: 200px;
+    margin: 0 auto;
+ }
+
+ li{
+    margin-bottom: 15px;
+ }
+ h3 {
+    background-color: white;
+
+ }
+ a{
+    font-size: 20px;
+    background-color: white;
+    text-decoration: none;
+    border: 1px;
+    
+    
+
+ }
