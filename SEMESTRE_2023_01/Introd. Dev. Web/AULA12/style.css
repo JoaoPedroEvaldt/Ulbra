@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    height: auto;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 5px;
+    font-size: 4rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}

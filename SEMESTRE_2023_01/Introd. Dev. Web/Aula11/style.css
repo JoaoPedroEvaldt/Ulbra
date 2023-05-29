@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 20vh;
+    background-color: gray;
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+    color: white
+}
+main{
+    height: 150vh;
+    
+}
+footer{
+    height: 10vh;
+    background-color: gray;
+}
+nav{
+    width: 15%;
+    height: 100%;
+    float: left;
+    background-color: green;
+   
+}
+nav ul li{
+    list-style: none;
+    font-size: 30px;
+    padding: 10px;
+   
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+section{
+    width: 70%;
+    height: 100%;
+    float: left;
+    background-color: aqua;
+}
+aside{
+    width: 15%;
+    height: 100%;
+    float: left;
+    background-color: green;
+}
+.clear{
+    clear: both;
+}
+article{
+    height: 33.33%;
+    background-color: yellow;
+    border: 1px solid;
+    padding: 10px;
+}
