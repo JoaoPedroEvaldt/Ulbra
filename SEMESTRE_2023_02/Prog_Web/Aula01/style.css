@@ -1,0 +1,30 @@
+
+body{
+   background-color: bisque;
+}
+.task {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+  }
+  
+  .task.completed {
+    background-color: #d9f9d9;
+    
+  }
+  
+  .task .actions {
+    float: right;
+  }
+  
+  .task .actions button {
+    margin-left: 5px;
+  }
+  
+  .task .completed-text {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  
