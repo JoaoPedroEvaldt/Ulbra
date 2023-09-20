@@ -9,7 +9,7 @@ class Program
         do
         {
             // CRIANDO VARIAVES DO PROJETO
-            string? nome;
+            string nome;
             int idade;
             double altura;
             double peso;
