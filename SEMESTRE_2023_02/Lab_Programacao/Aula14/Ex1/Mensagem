@@ -1,0 +1,7 @@
+class Mensagem {
+
+    public void Exibir ()
+    {
+        Console.WriteLine("Bem-Vindo ao C#");
+    }
+}

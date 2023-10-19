@@ -19,8 +19,8 @@ class Program {
 
     static void Main (string [] args){
 
-        Estudante estudante1 = new Estudante( "Joao", "ADS", 21);
-         Estudante estudante2 = new Estudante( "Renata", "Farmacia", 22);
+        Estudante estudante1 = new Estudante( "Magali", "Palitinhos", 70);
+         Estudante estudante2 = new Estudante( "Meg", "Bagualona", 22);
 
         Console.WriteLine("Informações do Estudante");
         Console.WriteLine($"Estudante 1 - Nome: {estudante1.Nome}, Curso: {estudante1.Curso}, Idade: {estudante1.Idade}");
