@@ -12,6 +12,18 @@ public class Campeonato
         NomeCampeonato = nomeCampeonato;
     }
 
+      public void AdicionarEquipe(Equipe equipe)
+    {
+        if (equipeCount < 10)
+        {
+            EquipesParticipantes[equipeCount] = equipe;
+            equipeCount++;
+        }
+        else
+        {
+            Console.WriteLine("O campeonato já atingiu o limite de equipes participantes.");
+        }
+    }
     
 public void IniciarPartida(Equipe e1, Equipe e2)
 {
@@ -38,7 +50,8 @@ public void IniciarPartida(Equipe e1, Equipe e2)
                     jogador.Jogar();
                 }
             }
-            Console.WriteLine($"Partida entre {e1.NomeEquipe} e {e2.NomeEquipe} simulada.");
+             Console.WriteLine($"Iniciando partida entre {e1.NomeEquipe} e {e2.NomeEquipe}.");
+
         }
         else
         {

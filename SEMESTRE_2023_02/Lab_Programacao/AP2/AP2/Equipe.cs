@@ -4,7 +4,7 @@ public class Equipe
 {
     public string NomeEquipe;
     public Jogador[] Jogadores = new Jogador[5]; // Cada equipe tem exatamente 5 jogadores.
-    private int jogadorCount = 0;
+    private int jogadorCt = 0;
 
     public Equipe(string nomeEquipe)
     {
@@ -14,7 +14,7 @@ public class Equipe
     public int PontosTotal()
     {
         int pontosTotal = 0;
-        for (int i = 0; i < jogadorCount; i++)
+        for (int i = 0; i < jogadorCt; i++)
         {
             pontosTotal += Jogadores[i].Pontos;
         }
@@ -24,7 +24,7 @@ public class Equipe
     public int QuantidadeJogadoresNaoNulos()
     {
         int quantidadeNaoNulos = 0;
-        for (int i = 0; i < jogadorCount; i++)
+        for (int i = 0; i < jogadorCt; i++)
         {
             if (Jogadores[i] != null)
             {
@@ -36,14 +36,16 @@ public class Equipe
 
     public void AdicionarJogador(Jogador jogador)
     {
-        if (jogadorCount < 5)
+        if (jogadorCt < 5)
         {
-            Jogadores[jogadorCount] = jogador;
-            jogadorCount++;
+            Jogadores[jogadorCt] = jogador;
+           jogadorCt++;
         }
         else
         {
             Console.WriteLine("A equipe já possui 5 jogadores. Não é possível adicionar mais.");
+            
+            Console.WriteLine($"Jogador {jogador.Nome} adicionado à equipe {NomeEquipe}.");
         }
     }
 }

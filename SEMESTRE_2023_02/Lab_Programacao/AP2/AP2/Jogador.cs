@@ -17,5 +17,7 @@ public class Jogador
     {
         int pontosPartida = random.Next(1, 101);
         Pontos += pontosPartida;
+
+        Console.WriteLine($"Jogador {Nome} jogou e acumulou {pontosPartida} pontos. Pontuação total: {Pontos}.");
     }
 }
