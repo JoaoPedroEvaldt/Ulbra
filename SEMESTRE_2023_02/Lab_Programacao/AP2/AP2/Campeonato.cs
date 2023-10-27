@@ -1,6 +1,3 @@
-
-
-// Classe Campeonato
 public class Campeonato
 {
     public string NomeCampeonato;
@@ -12,7 +9,7 @@ public class Campeonato
         NomeCampeonato = nomeCampeonato;
     }
 
-      public void AdicionarEquipe(Equipe equipe)
+    public void AdicionarEquipe(Equipe equipe)
     {
         if (equipeCount < 10)
         {
@@ -24,46 +21,43 @@ public class Campeonato
             Console.WriteLine("O campeonato já atingiu o limite de equipes participantes.");
         }
     }
-    
-public void IniciarPartida(Equipe e1, Equipe e2)
-{
-    // Verifique se as equipes não são nulas antes de iniciar a partida.
-    if (e1 != null && e2 != null)
+
+    public void IniciarPartida(Equipe e1, Equipe e2)
     {
-        int jogadoresNaoNulosEquipe1 = e1.QuantidadeJogadoresNaoNulos();
-        int jogadoresNaoNulosEquipe2 = e2.QuantidadeJogadoresNaoNulos();
-
-        if (jogadoresNaoNulosEquipe1 == 5 || jogadoresNaoNulosEquipe2 == 5)
+        if (e1 != null && e2 != null)
         {
-            foreach (var jogador in e1.Jogadores)
-            {
-                if (jogador != null)
-                {
-                    jogador.Jogar();
-                }
-            }
+            int jogadoresNaoNulosEquipe1 = e1.QuantidadeJogadoresNaoNulos();
+            int jogadoresNaoNulosEquipe2 = e2.QuantidadeJogadoresNaoNulos();
 
-            foreach (var jogador in e2.Jogadores)
+            if (jogadoresNaoNulosEquipe1 == 5 && jogadoresNaoNulosEquipe2 == 5)
             {
-                if (jogador != null)
+                foreach (var jogador in e1.Jogadores)
                 {
-                    jogador.Jogar();
+                    if (jogador != null)
+                    {
+                        jogador.Jogar();
+                    }
                 }
-            }
-             Console.WriteLine($"Iniciando partida entre {e1.NomeEquipe} e {e2.NomeEquipe}.");
 
+                foreach (var jogador in e2.Jogadores)
+                {
+                    if (jogador != null)
+                    {
+                        jogador.Jogar();
+                    }
+                }
+                Console.WriteLine($"Iniciando partida entre {e1.NomeEquipe} e {e2.NomeEquipe}.");
+            }
+            else
+            {
+                Console.WriteLine("Ambas as equipes devem ter exatamente 5 jogadores para iniciar a partida.");
+            }
         }
         else
         {
-            Console.WriteLine("Pelo menos uma equipe deve ter exatamente 5 jogadores para iniciar a partida.");
+            Console.WriteLine("Uma das equipes é nula. Não é possível iniciar a partida.");
         }
     }
-    else
-    {
-        Console.WriteLine("Uma das equipes é nula. Não é possível iniciar a partida.");
-    }
-}
-
 
     public void Classificacao()
     {

@@ -1,4 +1,3 @@
-// Classe Jogador
 public class Jogador
 {
     public string Nome;
@@ -15,9 +14,15 @@ public class Jogador
 
     public void Jogar()
     {
-        int pontosPartida = random.Next(1, 101);
-        Pontos += pontosPartida;
-
-        Console.WriteLine($"Jogador {Nome} jogou e acumulou {pontosPartida} pontos. Pontuação total: {Pontos}.");
+        if (Pontos < 100) // Limita a pontuação máxima a 100
+        {
+            int pontosPartida = random.Next(1, 101 - Pontos); // Gera pontos entre 1 e a diferença até 100
+            Pontos += pontosPartida;
+            Console.WriteLine($"Jogador {Nome} jogou e acumulou {pontosPartida} pontos. Pontuação total: {Pontos}.");
+        }
+        else
+        {
+            Console.WriteLine($"O jogador {Nome} atingiu a pontuação máxima (100 pontos) e não pode acumular mais pontos.");
+        }
     }
 }
