@@ -9,7 +9,7 @@ public class Campeonato
         NomeCampeonato = nomeCampeonato;
     }
 
-    public void AdicionarEquipe(Equipe equipe) //
+    public void AdicionarEquipe(Equipe equipe) 
     {
         if (equipeCount < 10)
         {
@@ -46,7 +46,7 @@ public class Campeonato
 
                 foreach (var jogador in e2.Jogadores)
                 {
-                    if (jogador != null)
+                    if (jogador != null)   // Verifica se a variável 'jogador' não é nula.
                     {
                         jogador.Jogar();
                     }
