@@ -9,7 +9,7 @@ public class Equipe
         NomeEquipe = nomeEquipe;
     }
 
-    public int PontosTotal()
+    public int PontosTotal() // Método para calcular o total de pontos de todos os jogadores na equipe.
     {
         int pontosTotal = 0;
         for (int i = 0; i < jogadorCt; i++)
@@ -19,7 +19,7 @@ public class Equipe
         return pontosTotal;
     }
 
-    public int QuantidadeJogadoresNaoNulos()
+    public int QuantidadeJogadoresNaoNulos() // Método  para contar a quantidade de jogadores não nulos na equipe.
     {
         int quantidadeNaoNulos = 0;
         for (int i = 0; i < jogadorCt; i++)
@@ -32,7 +32,7 @@ public class Equipe
         return quantidadeNaoNulos;
     }
 
-    public void AdicionarJogador(Jogador jogador)
+    public void AdicionarJogador(Jogador jogador) // Método para adicionar um jogador à equipe.
 {
     if (jogadorCt < 5)
     {

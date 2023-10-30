@@ -5,15 +5,18 @@ Método: ImprimirTabuada()
 Descrição: Crie um método que imprima a tabuada do numeroBase.*/
 
 
-class Program
-{
-    static void Main()
-    {
-       
-        Console.Write("Digite um número para gerar a tabuada: ");
-        int numero = int.Parse(Console.ReadLine());
+Dada a seguinte classe em C#:
 
-        Tabuada tabuada = new Tabuada(numero);
-        tabuada.ImprimirTabuada();
-    }
-}
+public class Calculator
+{
+       public int Add(int a, int b)
+       {
+            return a + b;
+        }
+     
+       public double Add(double a, double b)
+      {
+           return a + b;
+       }
+ }
+ 

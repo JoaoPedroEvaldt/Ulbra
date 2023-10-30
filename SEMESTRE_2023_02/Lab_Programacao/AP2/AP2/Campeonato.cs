@@ -9,7 +9,7 @@ public class Campeonato
         NomeCampeonato = nomeCampeonato;
     }
 
-    public void AdicionarEquipe(Equipe equipe)
+    public void AdicionarEquipe(Equipe equipe) //
     {
         if (equipeCount < 10)
         {
@@ -31,6 +31,11 @@ public class Campeonato
 
             if (jogadoresNaoNulosEquipe1 == 5 && jogadoresNaoNulosEquipe2 == 5)
             {
+               
+
+                Console.WriteLine($"Iniciando partida entre {e1.NomeEquipe} e {e2.NomeEquipe}.");
+
+                Console.WriteLine("=================================");
                 foreach (var jogador in e1.Jogadores)
                 {
                     if (jogador != null)
@@ -46,7 +51,8 @@ public class Campeonato
                         jogador.Jogar();
                     }
                 }
-                Console.WriteLine($"Iniciando partida entre {e1.NomeEquipe} e {e2.NomeEquipe}.");
+            
+              
             }
             else
             {
@@ -59,7 +65,7 @@ public class Campeonato
         }
     }
 
-    public void Classificacao()
+    public void Classificacao() // Método para exibir a classificação das equipes no campeonato.
     {
         for (int i = 0; i < equipeCount; i++)
         {
@@ -75,6 +81,7 @@ public class Campeonato
         }
 
         Console.WriteLine("Classificação:");
+       
         for (int i = 0; i < equipeCount; i++)
         {
             Console.WriteLine($"{i + 1}. {EquipesParticipantes[i].NomeEquipe} - Pontos: {EquipesParticipantes[i].PontosTotal()}");

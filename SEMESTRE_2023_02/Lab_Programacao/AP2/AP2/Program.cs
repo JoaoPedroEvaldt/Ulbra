@@ -3,6 +3,7 @@
 class Program
 {
     static void Main(string[] args)
+    // Criação de um novo objeto da classe Campeonato e atribuição do nome "ESL-Major".
     {
         Campeonato campeonato = new Campeonato("ESL-Major");
 
@@ -13,9 +14,9 @@ class Program
         Console.WriteLine("=================================");
 
         // Criar jogadores
-        Jogador jogador1 = new Jogador("Jogador 1", "Fallen");
-        Jogador jogador2 = new Jogador("Jogador 2", "Colzera");
-        Jogador jogador3 = new Jogador("Jogador 3", "Fnx");
+        Jogador jogador1 = new Jogador("Jogador 1","Fallen");
+        Jogador jogador2 = new Jogador("Jogador 2","Colzera");
+        Jogador jogador3 = new Jogador("Jogador 3","Fnx");
         Jogador jogador4 = new Jogador("Jogador 4", "Taco");
         Jogador jogador5 = new Jogador("Jogador 5", "Fer");
 
@@ -39,6 +40,8 @@ class Program
         // Adicionar equipes ao campeonato
         campeonato.AdicionarEquipe(equipe1);
         campeonato.AdicionarEquipe(equipe2);
+
+        Console.WriteLine("=================================");
 
         // Iniciar uma partida
         campeonato.IniciarPartida(equipe1, equipe2);

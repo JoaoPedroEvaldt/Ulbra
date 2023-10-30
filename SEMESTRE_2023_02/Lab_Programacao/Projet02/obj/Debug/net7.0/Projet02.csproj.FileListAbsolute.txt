@@ -1,0 +1,4 @@
+C:\projetos\php-development-environment\C#\Projet02\obj\Debug\net7.0\Projet02.GeneratedMSBuildEditorConfig.editorconfig
+C:\projetos\php-development-environment\C#\Projet02\obj\Debug\net7.0\Projet02.AssemblyInfoInputs.cache
+C:\projetos\php-development-environment\C#\Projet02\obj\Debug\net7.0\Projet02.AssemblyInfo.cs
+C:\projetos\php-development-environment\C#\Projet02\obj\Debug\net7.0\Projet02.csproj.CoreCompileInputs.cache
