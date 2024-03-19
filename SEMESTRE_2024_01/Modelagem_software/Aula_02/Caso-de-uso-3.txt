@@ -1,0 +1,39 @@
+
+
+Caso de Uso 1: Criar Evento
+Atores: Organizador de Eventos
+
+Descrição:
+O organizador de eventos deseja criar um novo evento no sistema. Ele tem acesso às seguintes funcionalidades:
+
+Preencher Detalhes do Evento: O organizador insere informações sobre o evento, como título, data, local e descrição.
+Definir Categorias: Escolhe as categorias adequadas para o evento, como conferência, workshop, seminário, etc.
+Adicionar Palestrantes: Inclui informações sobre os palestrantes que participarão do evento, como nome, biografia e tópicos de apresentação.
+Configurar Ingressos: Define os tipos de ingressos disponíveis, preços, quantidades e qualquer política relacionada a descontos ou códigos promocionais.
+Confirmar e Criar Evento: Finaliza o processo de criação do evento, verificando todas as informações inseridas e confirmando a criação.
+
+
+Caso de Uso 2: Registrar Participação
+Atores: Participante
+
+Descrição:
+Um participante deseja se registrar para participar de um evento existente. Ele tem acesso às seguintes funcionalidades:
+
+Buscar Eventos: Pesquisa por eventos disponíveis com base em critérios como data, categoria ou palavra-chave.
+Visualizar Detalhes do Evento: Analisa informações detalhadas sobre o evento, incluindo título, data, local, descrição e lista de palestrantes.
+Selecionar Ingresso: Escolhe o tipo de ingresso desejado e a quantidade.
+Preencher Dados Pessoais: Insere suas informações pessoais necessárias para registro, como nome, e-mail e informações de contato.
+Confirmar Registro: Finaliza o processo de registro, verificando todas as informações inseridas e confirmando a participação no evento.
+
+
+Caso de Uso 3: Gerenciar Palestrantes
+Atores: Administrador do Sistema
+
+Descrição:
+O administrador do sistema é responsável por gerenciar os palestrantes que participarão dos eventos. Ele tem acesso às seguintes funcionalidades:
+
+Visualizar Lista de Palestrantes: Visualiza a lista de todos os palestrantes cadastrados no sistema, juntamente com suas informações básicas.
+Adicionar Novo Palestrante: Insere informações sobre um novo palestrante, como nome, biografia, áreas de expertise e informações de contato.
+Editar Informações do Palestrante: Atualiza as informações de um palestrante existente, como biografia, foto ou informações de contato.
+Remover Palestrante: Remove um palestrante da lista, se necessário, após verificação do status de participação em eventos futuros.
+Enviar Convite para Palestrante: Envia um convite por e-mail para um palestrante participar de um evento específico, fornecendo detalhes sobre data, horário, tópicos e quaisquer requisitos adicionais.
