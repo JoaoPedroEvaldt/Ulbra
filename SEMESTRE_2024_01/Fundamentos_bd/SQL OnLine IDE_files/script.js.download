@@ -1,0 +1,56 @@
+///////////////////////////////////////////
+////////////////////////////////////// INIT
+function init() {
+
+    /////////////// VARS
+
+    //---> General info
+    let adWidth = gsap.getProperty("#container", "width");
+    let adHeight = gsap.getProperty("#container", "height");
+
+
+    ////////// ANIMATION
+    //AD INIT
+
+    //--> Step 01
+    function s01() {
+
+        let tl = gsap.timeline()
+
+        .from("#line-top", { duration: 2.75, x: 44, ease: "back(8).out" }, "anim")
+            .from("#line-bottom", { duration: 2.75, x: -44, ease: "back(8).out" }, "<")
+
+        .from("#pin", { duration: .7, scale: 0, transformOrigin: "150px 74px", ease: "elastic(.8, .3).out" }, "anim")
+            .from("#foodmarks", { duration: .5, scaleY: 0, scaleX: .9, rotateX: 25, transformOrigin: "150px 74px", ease: "power2.out" }, "<.3")
+            .from(".left", { duration: .5, x: -120, autoAlpha: 0, ease: "power2.out", stagger: .3 }, ">")
+            .from(".right", { duration: .5, x: 120, autoAlpha: 0, ease: "power2.out", stagger: .3 }, "<.15")
+            .from("#coke-rounded", { duration: .5, rotateY: 90, x: 60, autoAlpha: 0, ease: "power3.out", transformOrigin: "150px 176px" }, ">")
+            .from("#cta", { duration: .5, y: 10, autoAlpha: 0, ease: "circ.out" }, ">")
+
+        return tl
+    }
+
+    ///////////////////////////////////////////
+    /////////// CONCAT STEPS INTO MAIN TIMELINE
+    var TL = gsap.timeline()
+        .set("img", { rotationZ: 0.02, force3D: false, transformStyle: "preserve-3d" })
+        .set("#container", { opacity: 1 })
+        .add(s01())
+
+    console.log(`%c[TL Duration] - %c${TL.totalDuration()}s`, 'color: #0394fc;', 'color: #fcba03;')
+
+};
+
+
+window.onload = function(event) {
+    console.log('loaded.');
+    requestAnimationFrame(counter);
+};
+
+var maxFrames = 10;
+var frames = 0;
+
+function counter() {
+    frames++;
+    (frames >= maxFrames) ? init(): requestAnimationFrame(counter);
+}
